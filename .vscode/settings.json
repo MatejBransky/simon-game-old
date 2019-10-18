@@ -1,0 +1,42 @@
+{
+  "files.exclude": {
+    ".git/": true,
+    "node_modules/": false,
+    "static/": false
+  },
+  "search.exclude": {
+    "**/.cache": true,
+    "**/node_modules": true,
+    "**/static": true
+  },
+  "editor.formatOnSave": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    {
+      "language": "javascript",
+      "autoFix": true
+    },
+    {
+      "language": "javascriptreact",
+      "autoFix": true
+    },
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true
+    }
+  ],
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "debug.node.autoAttach": "on",
+  "files.associations": {
+    ".huskyrc": "json",
+    ".lintstagedrc": "json",
+    ".stylelintrc": "json"
+  }
+}
