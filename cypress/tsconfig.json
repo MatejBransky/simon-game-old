@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "allowJs": true,
+    "baseUrl": "../node_modules",
+    "types": ["node", "cypress"]
+  }
+}

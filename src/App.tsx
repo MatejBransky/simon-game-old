@@ -22,17 +22,19 @@ const App = () => {
       <div className="dashboard">
         <h2>Simon</h2>
         <section className="display">
-          <div className="display">--</div>
+          <div className="display" data-testid="display">
+            --
+          </div>
           <p>Count</p>
         </section>
 
         <section className="start">
-          <button></button>
+          <button data-testid="button-start"></button>
           <p>Start</p>
         </section>
 
         <section className="strict">
-          <button></button>
+          <button data-testid="button-strict"></button>
           <div className="notification"></div>{' '}
           {/** TODO: support active class */}
           <p>Strict</p>
@@ -40,7 +42,7 @@ const App = () => {
 
         <section className="power">
           <p>Off</p>
-          <button className="switch">
+          <button className="switch" data-testid="button-power">
             <div className="off"></div>
           </button>
           <p>On</p>
