@@ -8,6 +8,7 @@
   "extends": [
     "eslint:recommended",
     "prettier/@typescript-eslint",
+    "plugin:react/recommended",
     "plugin:prettier/recommended"
   ],
   "plugins": ["jest"]
