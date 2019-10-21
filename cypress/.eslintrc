@@ -1,0 +1,10 @@
+{
+  "env": {
+    "cypress/globals": true
+  },
+  "plugins": ["cypress"],
+  "rules": {
+    "no-console": 0,
+    "no-unused-vars": 0
+  }
+}
