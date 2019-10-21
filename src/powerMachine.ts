@@ -1,8 +1,15 @@
 import { Machine } from 'xstate';
 
-import { gameMachine } from './gameMachine';
+export interface States {
+  states: {
+    notRunning: {};
+    running: {};
+  };
+}
 
-export const powerMachine = Machine({
+type Events = { type: 'TOGGLE' };
+
+export const powerMachine = Machine<{}, States, Events>({
   id: 'power',
   initial: 'notRunning',
   states: {
@@ -12,7 +19,6 @@ export const powerMachine = Machine({
       },
     },
     running: {
-      invoke: gameMachine,
       on: {
         TOGGLE: 'notRunning',
       },

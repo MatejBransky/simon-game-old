@@ -9,22 +9,28 @@ export const countdownMachine = Machine(
     initial: 'ready',
     states: {
       ready: {
-        after: {
-          delay: 'getDelay',
-          target: 'steady',
-        },
+        after: [
+          {
+            delay: 'getDelay',
+            target: 'steady',
+          },
+        ],
       },
       steady: {
-        after: {
-          delay: 'getDelay',
-          target: 'go',
-        },
+        after: [
+          {
+            delay: 'getDelay',
+            target: 'go',
+          },
+        ],
       },
       go: {
-        after: {
-          delay: 'getDelay',
-          target: 'finished',
-        },
+        after: [
+          {
+            delay: 'getDelay',
+            target: 'finished',
+          },
+        ],
       },
       finished: { type: 'final' },
     },
