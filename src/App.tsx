@@ -21,28 +21,30 @@ const App = () => {
       </div>
       <div className="dashboard">
         <h2>Simon</h2>
-        <div className="controls">
-          <section className="display">
-            <div className="display">TODO</div>
-            <p>Count</p>
-          </section>
+        <section className="display">
+          <div className="display">--</div>
+          <p>Count</p>
+        </section>
 
-          <section className="start">
-            <button></button>
-            <p>Start</p>
-          </section>
+        <section className="start">
+          <button></button>
+          <p>Start</p>
+        </section>
 
-          <section className="strict">
-            <button></button>
-            <p>Strict</p>
-          </section>
+        <section className="strict">
+          <button></button>
+          <div className="notification"></div>{' '}
+          {/** TODO: support active class */}
+          <p>Strict</p>
+        </section>
 
-          <section className="power">
-            <p className="off">Off</p>
-            <p className="on">On</p>
-            <button></button>
-          </section>
-        </div>
+        <section className="power">
+          <p>Off</p>
+          <button className="switch">
+            <div className="off"></div>
+          </button>
+          <p>On</p>
+        </section>
       </div>
     </div>
   );
