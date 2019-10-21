@@ -4,10 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>React with TypeScript</title>
+    <title>Simon Game</title>
+    <style>
+      html,
+      body,
+      .wrapper {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+      }
+
+      .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(255, 245, 245);
+      }
+    </style>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app" class="wrapper"></div>
     <script src="index.tsx"></script>
   </body>
 </html>
